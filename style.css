@@ -5,8 +5,78 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 /* Add styles here! */
+
+p {
+    padding: 5px;
+    margin: 0px;
+}
+
+
+strong {
+    color: hsl(160deg, 100%, 30%);
+}
+
+.max-width-wrapper {
+    margin: auto;
+    background-color: white;
+    min-width: 350px;
+    max-width: 600px;
+}
+
+
+header {
+    padding-top: 20px;
+
+    .max-width-wrapper .intro-chunk {
+        margin-right: auto;
+        max-width: 600px;
+    }
+
+    .intro-chunk h1 {
+        padding-left: 15px;
+        margin-left: 0px;
+    }
+
+    .max-width-wrapper .intro-chunk p {
+        max-width: 350px;
+        padding-left: 15px;
+        margin-left: 0px;
+    }
+}
+
+main {
+    border-top: solid 8px hsl(0deg, 0%, 60%);
+    background-color: hsl(0deg, 0%, 40%);
+    height: 100%;
+    width: 100%;
+    padding-top: 32px;
+
+    .card {
+        margin: auto;
+        padding: 5px;
+        border-bottom: solid 8px hsl(0deg, 0%, 60%);
+    }
+
+    .card .indented-heading {
+        display: inline-block;
+        margin-top: 0px;
+        margin-left: -5px;
+        margin-bottom: 0px;
+        background-color: hsl(45deg, 100%, 50%);
+        width: fit-content;
+        padding: 15px;
+        padding-right: 20px;
+        border-bottom: solid 8px hsl(45deg, 100%, 40%);
+    }
+
+
+    .max-width-wrapper p {
+        padding: 15px;
+    }
+}
